@@ -40,17 +40,26 @@ st.set_page_config(layout="wide",page_title=None)
     
 #dff=pd.read_csv("CosmalineTransactions.csv")
 
-with st.sidebar:
-   uploaded_file = st.file_uploader("Choose a file")
-   if uploaded_file is not None:
-      dff = pd.read_csv(uploaded_file)
-   if uploaded_file is None:
+#with st.sidebar:
+   #uploaded_file = st.file_uploader("Choose a file")
+   #if uploaded_file is not None:
+      #dff = pd.read_csv(uploaded_file)
+   #if uploaded_file is None:
       # To read file as bytes:
-      url = "https://drive.google.com/file/d/1vCbOYxh8aE9ZdAJWmeItOww4vQflIeau/view?usp=sharing"
-      path = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2]
-      dff = pd.read_csv(path)
+      #url = "https://drive.google.com/file/d/1vCbOYxh8aE9ZdAJWmeItOww4vQflIeau/view?usp=sharing"
+      #path = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2]
+      #dff = pd.read_csv(path)
       
+with st.sidebar:
+    uploaded_file = st.file_uploader("Choose a file")
+    if uploaded_file is not None:
+     # To read file as bytes:
+      bytes_data = uploaded_file.getvalue()
+      st.write(bytes_data)
      
+
+dff = pd.read_csv(uploaded_file)
+
 
 
 
