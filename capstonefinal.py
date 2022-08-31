@@ -34,7 +34,7 @@ uploaded_file = st.sidebar.file_uploader(label="Upload your data",type=["csv"])
 
 global df
 if uploaded_file is not None:
-dff=pd.read_csv(uploaded_file)
+ dff=pd.read_csv(uploaded_file)
  
 
     
