@@ -24,8 +24,6 @@ from sklearn.cluster import KMeans
 from sklearn.ensemble import RandomForestClassifier
 
 
-[server]
-maxUploadSize = 400
 
 #df = pd.read_csv("C:\\Users\\USER\\Downloads\\finaloriginal.csv")
 #df.drop[["CUSTOMER_TRX_LINE_ID","BILL_TO_USTOMER_ID","SHIP_TO_CUSTOMER_ID","SHIP_SITE_USE_ID","CURRENCY CODE","EXCHANGE_RATE","LINE_TYPE","PRICE_ADJUSTMENT_ID","MODIFIER_ID","LINE_ATT2","PARENT_ORDER_TYPE_ID","PARENT_OE_HEADER_ID","PARENT_OE_LINE_ID","OE_LINE_ID","PARENT_TRANSACTION_SOURCE_ID","TRANSACTION_SOURCE_ID","SHIPMENT_DATE"]]
