@@ -32,7 +32,7 @@ st.set_page_config(layout="wide",page_title=None)
 
 uploaded_file = st.sidebar.file_uploader(label="Upload your data",type=["csv"])
 
-global df
+
 if uploaded_file is not None:
  dff=pd.read_csv(uploaded_file)
  
@@ -50,15 +50,15 @@ if uploaded_file is not None:
       #path = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2]
       #dff = pd.read_csv(path)
       
-with st.sidebar:
-    uploaded_file = st.file_uploader("Choose a file")
-    if uploaded_file is not None:
+#with st.sidebar:
+    #uploaded_file = st.file_uploader("Choose a file")
+    #if uploaded_file is not None:
      # To read file as bytes:
-      bytes_data = uploaded_file.getvalue()
-      st.write(bytes_data)
+     # bytes_data = uploaded_file.getvalue()
+     # st.write(bytes_data)
      
 
-dff = pd.read_csv(uploaded_file)
+#dff = pd.read_csv(uploaded_file)
 
 
 
