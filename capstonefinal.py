@@ -68,7 +68,7 @@ if uploaded_file is not None:
 
 
 #dff = pd.read_csv("C:\\Users\\USER\\Downloads\\CosmalineTransactions.csv")
-dff.drop(["CUSTOMER_TRX_LINE_ID","BILL_TO_CUSTOMER_ID","SHIP_TO_CUSTOMER_ID","SHIP_SITE_USE_ID","CURRENCY_CODE","EXCHANGE_RATE","LINE_TYPE","PRICE_ADJUSTMENT_ID","MODIFIER_ID","LINE_ATT2","PARENT_ORDER_TYPE_ID","PARENT_OE_HEADER_ID","PARENT_OE_LINE_ID","OE_LINE_ID","PARENT_TRANSACTION_SOURCE_ID","TRANSACTION_SOURCE_ID","SHIPMENT_DATE"],axis=1)
+#dff.drop(["CUSTOMER_TRX_LINE_ID","BILL_TO_CUSTOMER_ID","SHIP_TO_CUSTOMER_ID","SHIP_SITE_USE_ID","CURRENCY_CODE","EXCHANGE_RATE","LINE_TYPE","PRICE_ADJUSTMENT_ID","MODIFIER_ID","LINE_ATT2","PARENT_ORDER_TYPE_ID","PARENT_OE_HEADER_ID","PARENT_OE_LINE_ID","OE_LINE_ID","PARENT_TRANSACTION_SOURCE_ID","TRANSACTION_SOURCE_ID","SHIPMENT_DATE"],axis=1)
 
 over_theme = {'menu_background': '#000080'}
 menu_data = [{'label':'Sales Prediction'},{'label':'Next Purchase Prediction'},{'label':'Market Basket Analysis'},{'label':'Price Sensitivity Analysis'},{'label':'RFM Analysis'},{'label':'Recommendation System'},{'label':'Google Trends'},{'label':'Competition'}]
