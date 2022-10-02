@@ -1317,8 +1317,8 @@ if menu_id == "RFM Analysis":
         st.subheader(rfm_score)
     with col7:
         st.markdown("Area")
-        st.table(df2.head())
-        st.subheader(df2.iloc[0,35])
+       
+        st.subheader(df2.iloc[0,34])
         
         
     with col8:
